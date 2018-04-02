@@ -1,0 +1,15 @@
+/* MIXINS */
+
+@mixin Title-Font {
+	font-family: "Baskerville Old Face", Candara, Calibri;
+	letter-spacing: -1px;
+	font-size: 3rem;
+	font-weight: 2px;
+}
+
+@mixin button {
+	margin: 10px;
+	padding: 3px;
+	height: auto;
+	width: auto;
+}

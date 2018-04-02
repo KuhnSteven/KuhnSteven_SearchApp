@@ -3,20 +3,24 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<title>Index</title>
+		<nav><a href="">Home</a><a href="">About</a><a href="">Contact</a>
 	</head>
 	<body>
 		<header>
-			Marvel Super-Hero/Heroine Database
+			Book Search Engine
 		</header>
-		<form>
-			<h1>Hero Search:</h1>
-			<p>Enter the full-name (including-hyphenation!) of the hero you seek knowledge of.</p>
-			<textarea placeholder="Spider-Man"></textarea>
-			<button type="submit">Search</button> <button type="reset">Reset</button>
+		<form id="form">
+			<p>Enter the full-name/title (including-hyphenation!) of the book you seek knowledge of, traveler.</p>
+			<textarea id="search" placeholder="The-Lord-Of-The-Rings"></textarea>
+			<button type="submit" id="searchBtn">Search</button> <button type="reset">Reset</button>
 		</form>
 		<section id=results>
+			<h1>Results</h1>
 		</section>
+
+		 <script type="text/javascript" src="js/index.js"></script>
 	</body>
 
 <!-- END OF FILE -->

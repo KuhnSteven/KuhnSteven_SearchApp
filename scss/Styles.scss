@@ -1,0 +1,75 @@
+/* Style Guide*/
+@import 'Extends';
+@import 'Partial';
+@import 'Partial2';
+@import 'Mixin';
+@import 'Variables';
+
+html {
+	background-color: $primary-color;
+	font-family: $font-stack;
+	
+	#results {
+	text-align: center;
+	font-size: 1.5rem;
+		h2 {
+			font-size: 2rem;
+			margin: 5px;
+		}
+	}
+}
+
+nav {
+	text-align: center;
+	ul {
+		list-style-type: none;
+   		margin: 0 auto;
+    	padding: 0;
+    	display: inline-block;
+    	overflow: hidden;
+		color: red;
+		background-color: white;
+		li {
+			float: left;
+		}
+	}
+}
+
+nav ul li a {
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #999999;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: $active-color;
+}
+
+nav ul li a:hover {
+		background-color: #D5D5D5;
+		color: $active-color;
+	}
+.active {
+	background-color: #D5D5D5;
+	color: $active-color;
+}
+
+.message {
+	@extends %pop-ups;
+	border-color: black;
+}
+
+.alert {
+	@extends %pop-ups;
+	border-color: yellow;
+}
+
+.warning {
+	@extends %pop-ups;
+	border-color: red;
+	h2 {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+}

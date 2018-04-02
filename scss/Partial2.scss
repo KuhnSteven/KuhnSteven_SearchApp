@@ -1,0 +1,7 @@
+@import 'Mixin';
+/* PARTIAL #2 */
+
+img {
+	border-style: double;
+	@includes button
+}

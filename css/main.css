@@ -1,0 +1,74 @@
+/* Style Guide*/
+/* EXTENDS */
+/* global variables */
+/* PARTIAL #1 */
+#form {
+  text-align: center;
+  background-color: white;
+  font-size: 1rem; }
+
+/* MIXINS */
+/* PARTIAL #2 */
+img {
+  border-style: double;
+  @includes button; }
+
+/* MIXINS */
+/* global variables */
+html {
+  background-color: tan;
+  font-family: "Kannada Sangam MN", Andale Mono, Arial, Calibri; }
+  html #results {
+    text-align: center;
+    font-size: 1.5rem; }
+    html #results h2 {
+      font-size: 2rem;
+      margin: 5px; }
+
+nav {
+  text-align: center; }
+  nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    overflow: hidden;
+    color: red;
+    background-color: white; }
+    nav ul li {
+      float: left; }
+
+nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #999999;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: blue; }
+
+nav ul li a:hover {
+  background-color: #D5D5D5;
+  color: blue; }
+
+.active {
+  background-color: #D5D5D5;
+  color: blue; }
+
+.message {
+  @extends %pop-ups;
+  border-color: black; }
+
+.alert {
+  @extends %pop-ups;
+  border-color: yellow; }
+
+.warning {
+  @extends %pop-ups;
+  border-color: red; }
+  .warning h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=Main.css.map */
