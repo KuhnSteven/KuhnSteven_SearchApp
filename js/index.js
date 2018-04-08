@@ -48,4 +48,4 @@ function displayPage(data) {
 	// Populate the DOM
 	results.innerHTML = content;
 
-};
+}
