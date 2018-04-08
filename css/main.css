@@ -3,9 +3,33 @@
 /* global variables */
 /* PARTIAL #1 */
 #form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  padding: 5px;
   text-align: center;
   background-color: white;
   font-size: 1rem; }
+
+#results {
+  display: block;
+  margin: 10px;
+  border: 2px solid black;
+  text-align: left;
+  float: left;
+  background-color: white;
+  font-size: 1rem; }
+  #results h1 {
+    font-size: 2rem;
+    margin: 5px; }
+  #results h2 {
+    font-size: 1.3rem;
+    margin: 2px; }
+
+article {
+  border: 2px dashed black;
+  background-color: tan; }
 
 /* MIXINS */
 /* PARTIAL #2 */
@@ -18,42 +42,48 @@ img {
 html {
   background-color: tan;
   font-family: "Kannada Sangam MN", Andale Mono, Arial, Calibri; }
-  html #results {
-    text-align: center;
-    font-size: 1.5rem; }
-    html #results h2 {
-      font-size: 2rem;
-      margin: 5px; }
+  html header {
+    font-family: "Baskerville Old Face", Candara, Calibri;
+    letter-spacing: -1px;
+    font-size: 3rem;
+    font-weight: 2px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center; }
 
 nav {
-  text-align: center; }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px; }
   nav ul {
     list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    display: inline-block;
-    overflow: hidden;
-    color: red;
-    background-color: white; }
+    margin: 10px;
+    display: inline-block; }
     nav ul li {
-      float: left; }
+      float: left;
+      padding: 5px;
+      height: 20px auto;
+      width: 40px auto; }
 
 nav ul li a {
   display: block;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.2rem;
-  color: #999999;
+  font-size: 1.4rem;
+  color: black;
   padding: 10px 20px;
   text-decoration: none;
-  background-color: blue; }
+  background-color: white; }
 
 nav ul li a:hover {
-  background-color: #D5D5D5;
+  border: 3px solid black;
   color: blue; }
 
 .active {
-  background-color: #D5D5D5;
+  border: 1px solid black;
   color: blue; }
 
 .message {
@@ -71,4 +101,4 @@ nav ul li a:hover {
     font-size: 1.5rem;
     text-transform: uppercase; }
 
-/*# sourceMappingURL=Main.css.map */
+/*# sourceMappingURL=main.css.map */
