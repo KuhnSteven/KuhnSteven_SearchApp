@@ -1,22 +1,13 @@
-var gulp = require('gulp');
-var sass = require('gulp-scss');
+const gulp = require("gulp");
+const sass = require("gulp-sass");
 
-//builds it to transfer from scss to css
-/*global require*/
-(function (r) {
-  "use strict";
-  var scss = r("gulp-scss");
-  var gulp = r("gulp");
-  gulp.task("scss", function () {
-    gulp.src(
-      "/scss/**/*.scss"
-    ).pipe(scss(
-      { "bundleExec": true }
-    )).pipe(gulp.dest("/css"));
-  });
-}(require));
+gulp.task("css", () => {
+      return gulp
+            .src("./scss/Styles.scss")
+            .pipe(sass().on("error", sass.logError))
+            .pipe(gulp.dest("./css"))
+});
 
-//watches it to make the transition from scss to css
-gulp.task('watch', function () {
-  gulp.watch('./scss/*.scss', ['css']);
+gulp.task("watch", () => {
+      gulp.watch("./scss/*.scss", ["css"])
 });

@@ -1,0 +1,25 @@
+{
+  "name": "kuhnsteven_searchapp",
+  "version": "1.0.0",
+  "description": "DWS2 w/ Mark M. Project Origin: 04/01/2018 Project Deadline: 04/27/2018",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuhnSteven/KuhnSteven_SearchApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuhnSteven/KuhnSteven_SearchApp/issues"
+  },
+  "homepage": "https://github.com/KuhnSteven/KuhnSteven_SearchApp#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.1"
+  }
+}
