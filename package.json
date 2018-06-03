@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/KuhnSteven/KuhnSteven_SearchApp#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1"
   },
   "devDependencies": {
     "gulp-sass": "^4.0.1"

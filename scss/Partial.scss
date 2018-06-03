@@ -29,6 +29,10 @@
 		}
 	}
 
+	#search {
+		columns: 20;
+	}
+
 	article {
 		border: 2px dashed black;
 		background-color: $primary-color;
